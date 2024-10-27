@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+   box-sizing: border-box;
+}
+body{
+    height:100%;
+    width:100%;
+}
+#page1{
+    min-height: 100vh;
+    width:100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+}
+nav{
+    padding: 2vw 0vw;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#navpart2{
+   display: flex;
+   align-items: center;
+   gap:1vw;
+}
+#navpart2 h4{
+    padding: 10px 20px;
+    border: 1px solid rgb(118, 113, 113);
+    border-radius: 50px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.528);
+    font-size: 10px;
+    position: relative;
+    transition: all ease 0.6s ;
+    overflow: hidden;
+    cursor: pointer;
+}
+#navpart2 h4::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s ;
+    
+}
+#navpart2 h4:hover::after{
+    bottom: 0;
+   border-radius: 0;
+}
+#navpart2 h4 a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.681);
+    z-index: 9;
+    position: relative;
+}
+#navpart2 h4:hover a{
+    color: white;
+}
+#center{
+    height: 65vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 166, 0, 0.357);
+    padding: 2.5vw;
+}
+#left {
+    width: 30vw;
+    font-size: 1.8vw;
+    font-family: inter;
+    line-height: 2vw;
+    font-weight: bold;  
+}
+#center h1{
+    font-size: 9vw;
+    line-height: 9.2vw;
+    font-family: inter;
+}
+#page1 video{
+    width: 100%;
+    margin-top: 4vw;
+    border-radius: 30px;
+    position: relative;
+   
+}
+#hero-shape1{
+    position: absolute;
+    background: orangered;
+    height: 36vw;
+    width: 36vw;
+    right: 0;
+    top:75vh;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+}
+#hero-shape2{
+    position: absolute;
+    background: orangered;
+    height: 36vw;
+    width: 36vw;
+    right: 0;
+    top:75vh;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: anime;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#hero-shape3{
+    position: absolute;
+    background: orangered;
+    height: 36vw;
+    width: 36vw;
+    right: 0;
+    top:75vh;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: anime;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes anime {
+    from{
+        transform: translate(5%, -5%);
+    }
+    to{
+        transform: translate(-20%, 20%);
+    }
+}
